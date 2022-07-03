@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/crearMu.css">
+    <title>FASHION</title>
+</head>
+
+<body>
+    
+  
+    
+    <nav>
+        <ul class="menu">
+           <li>
+        </li>
+        <li><a href="/sessionIn"><i class="fa-solid fa-house"></i>inicio</a></li>
+        <li><a href="/crear"><i class="fa-solid fa-scissors"></i>diseña</a></li>
+        <li><a href="/logOut"><i class="fa-solid fa-user-plus"></i>cerrar sesion</a></li>
+    </ul>
+</nav>
+
+<div class="title1">
+        
+        <h1>FASHION-FRIENDLY</h1>
+        <h2>Diseñado por los ilusionistas</h2>
+    </div>
+    <main>
+        <br>
+        <div class="contenido">
+            <div class="parteSu">
+                <img id="camisa" class="ropa" src="https://res.cloudinary.com/fashion-friendly/image/upload/v1656553446/logo/fashiond_friendly_byj8ye.gif">
+            </div>
+            <div class="parteIn">
+                <img id="pantalon" class="ropa" src="https://res.cloudinary.com/fashion-friendly/image/upload/v1656553446/logo/fashiond_friendly_byj8ye.gif">
+            </div><br><button  href="/prendasUs" class="guardar" type="submit">GUARDAR</button>
+
+        </div>
+
+        <div class="botones">
+            <select id="selectCami" onchange="cambiarCamisas()"> 
+                <% if (linkCami.length) { %>
+                        <% for( let i = 0; i < linkCami.length; i++ ) { %>
+                            <option value="<%= linkCami[i].link %>" id="<%= linkCami[i].codigoCa %>">  <%= linkCami[i].nombre %> </option>                            
+                        
+                        <% } %> 
+                       
+                        <% } %>
+                    </select>
+            <br><br><br>
+            <select id="selectPanta" onchange="cambiarPantalon()"> 
+                <% if (linkPan.length) { %>
+                        <% for( let i = 0; i < linkPan.length; i++ ) { %>
+                            <option value="<%= linkPan[i].link  %> " id="<%= linkPan[i].codigoCa %>">  <%= linkPan[i].nombre %> </option>                            
+                        
+                        <% } %> 
+                       
+                        <% } %>
+                    </select>
+        </div>
+        <script >
+            function cambiarCamisas(){
+                console.log(777777777);
+                let arrayCamisa =  document.getElementById("selectCami")
+           document.getElementById("camisa").src = arrayCamisa.value
+            }
+            function cambiarPantalon(){
+                let arrayPantalones =  document.getElementById("selectPanta")
+           document.getElementById("pantalon").src = arrayPantalones.value
+            }
+            
+         
+           
+           
+        </script>
+
+
+
+
+    </main>
+    <footer>
+        <p>Derechos reservados a:
+            <ul>
+                <li>Julian Parra</li>
+                <li>Pedro Bermudez</li>
+                <li>Jimena Fraile</li>
+                <li>Nicolas Mazo</li>
+                <li>Fernanda Henao</li>
+            </ul>fshnfriendly@gmail.com</p>
+            <p> &copy;2022</p>
+    </footer>
+
+
+
+</body>
+
+</html>-

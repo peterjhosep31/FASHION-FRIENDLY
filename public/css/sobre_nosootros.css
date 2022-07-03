@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+html{
+    background-color: silver;
+}
+body{
+    height: 100vh;
+}
+
+main{
+    display: inline-flex;
+    width: 100%;
+    height: 800px;
+}
+header{
+    padding-top:25px;
+    background-color: #16a085;
+    
+    color:white;
+    text-align: center;
+    height: 100px;
+    font-family: Arial Rounded MT Bold;
+    font-size: 33px;
+}
+
+article{
+    background:silver;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 700px;
+    font-size:30px;
+    text-align: center;
+    padding-top:10px;
+    
+   
+}
+article:hover{
+    background-color: #1abc9c;
+    color:white;
+    transition-duration: 3s;
+    transform: scale(1.01);
+}
+
+nav {
+    
+    width: 700px;
+    font-size: 30px;
+    background:silver;
+    padding-top:10px;
+    text-align: center;
+  
+    
+}
+nav:hover{
+    background-color: #1abc9c;
+    color:white;
+    transition-duration: 3s;
+    transform: scale(1.01);
+}
+
+p{
+    font-size:20px;
+    font-family: arial;
+    padding-top:20px;
+}
+
+aside{
+    color: black;
+    font-size: 30px;
+    background:silver;
+    width: 700px;
+    text-align: center;    
+}
+
+aside:hover{
+    background-color: #1abc9c;
+    color:white;
+    transition-duration: 3s;
+    transform: scale(1.01);
+}
+
+
+
+.volver ul{
+     
+    background-color:#16a085;
+    width: 100%;
+    list-style-type: none;
+    text-align:center;
+  }
+
+.volver li{
+    display: inline-flex;
+  }
+
+.volver a{
+    text-decoration: none;
+    color:white;
+    padding: 10px;
+    width:150px;
+
+  }
+
+.volver li :hover{
+    background-color: #1abc9c;
+  }
+
+  footer{
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: hwb(0 100% 0%);
+    background:#757575;
+    overflow: hidden;
+    margin: 10% 0 0 0;
+}
